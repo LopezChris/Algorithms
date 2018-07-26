@@ -142,11 +142,11 @@ int main() {
 
 	int Adj[NUMOFEDGES][NUMOFEDGES] = { 0 };
 	//Build matrix 128X128
-	string citys[NumOfCities];
+	string cities[NumOfCities];
 	//Array to hold the name of the cities
 
-	readData(Adj, citys);
-	primMST(Adj, citys);
+	readData(Adj, cities);
+	primMST(Adj, cities);
 
 	cin.get();
 	return 0;
