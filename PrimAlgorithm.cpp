@@ -7,12 +7,12 @@ using namespace std;
 #include<sstream>
 #define NumOfCities 128
 #define NUMOFEDGES 128
-					///////////////////////////////////////////////
-					// Finding minimum spanning tree between	 //
+					// Finding minimum spanning tree between     //
 					// 128 major cities in the U.S using Prim's  //
-					// algorithm								 //
-					// -Christian Lopez							 //
-					///////////////////////////////////////////////
+					// algorithm				     //
+					// -Christian Lopez			     //
+
+
 //Fucntion prototypes
 void readData(int[NUMOFEDGES][NUMOFEDGES], string[]);
 void print(int parent[], int n, const string city[], int graph[][NUMOFEDGES]);
@@ -148,7 +148,8 @@ int main() {
 	readData(Adj, cities);
 	primMST(Adj, cities);
 
-	cin.get();
+	
+        cin.get(); // Prevent terminal window to close prematurely
 	return 0;
 }
 #endif
